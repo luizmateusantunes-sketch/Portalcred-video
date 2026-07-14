@@ -15,7 +15,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-PORT = int(os.environ.get("PORT", 8080))
+PORT = int(os.environ.get("PORT", 10000))
 
 VARIATION_PROFILES = [
     {"id": "mirror", "name": "Espelho Horizontal", "description": "Inverte horizontalmente. Muda hash sem alterar conteúdo.", "vf": "hflip", "af": "aecho=0.8:0.9:40:0.1"},
